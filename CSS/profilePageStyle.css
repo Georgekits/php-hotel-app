@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+/*Html & Body & Main Styling*/
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    font-family: Montserrat, cursive, sans-serif;
+}
+main {
+  min-height: calc(100% - 70px);
+}
+/*Container Div*/
+.container {
+    margin: 0 auto;
+    padding: 1% 0 0 0;
+}
+#leftNav{
+    margin-top:10%;
+    background-color:papayawhip;
+    height: 40%;
+    border-radius: 30px;
+    text-align:center;
+    padding:3%;
+}
+#resultBody{
+    margin-top:10%;
+}
+/*Hover on result Item*/
+.resultItem:hover
+{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari 3-8 */
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;  
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+/*Left Bar*/
+#leftNavHeading{
+    text-align: left;
+    color:rgb(240,100,0);
+    font-weight: bold;
+    text-align:center;
+}
+.container h5{
+    text-align: center;
+    color:rgb(240,100,0);
+    font-weight: normal;
+}
+.container h4 {
+    margin-top:30px;
+    text-align: center;
+    font-weight: normal;
+}
+/*Results heading*/
+.bookingHeading h5 {
+    background-color: rgb(240,100,0);
+    color:white;
+    border-radius: 3px;
+    padding: 1%;
+    margin:0;
+}
+h6 {
+    text-align:center;
+}
+/*padding of hotel container*/
+div.container.resultItem {
+    padding:0;
+}
+/*Hotel Results*/
+.results {
+    margin-top:20px;
+}
+/*Hotel Image*/
+img {
+    width: 100%;
+} 
+/*Hotel Information*/
+.hl {
+    background-color:rgb(240,100,0);
+    width:2px;
+    height:100%;
+    margin: 0 auto;
+}
+/*Go to room button*/
+.btn {
+    float: right;
+    background-color: rgb(240,100,0);
+    color: white;
+    margin: 5% 0 2% 0;
+}
+/*Price Tag*/
+.price {
+    background-color: gray;
+    color: white;
+    padding: 8px 3px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+    height:50px;
+}
+.price p {
+    margin: 0 auto;
+}
+/*Left orange border*/
+#itemBody{
+    border-left: 2px solid rgb(240,100,0);
+    height: 15%;
+}
+/*Information tag*/
+.info {
+    background-color:rgb(235,235,235);
+    padding:8px 2px;
+    border-radius: 3px;
+    height:50px;
+    margin-bottom:5px;
+}
+#informationTag {
+    margin : 0;
+}
+.info p {
+    font-size: 14px;
+}
+/*Footer*/
+footer {
+    margin-top: 10px;
+    padding: 21px;
+    text-align: center;
+    color:whitesmoke;
+    font-size: 18px;
+    background-color: rgb(63, 68, 63);
+    height: 60px;
+    width: 100%;
+}
+/*Custom ScrollBar*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+/*Media Queries*/
+@media (max-width: 800px) {
+    .info {
+        background-color:rgb(235,235,235);
+        padding:8px 2px;
+        border-radius: 3px;
+        height:70px;
+    }
+    .price {
+        background-color: gray;
+        color: white;
+        padding: 1px 3px;
+        border-radius: 3px;
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 15px;
+        height:50px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #leftNav {
+        margin-top:15%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .price p {
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 518px) {
+    .navbar-brand {
+        font-size:0.8rem
+    }
+}
+@media only screen and (max-width: 375px) {
+    #itemBody {
+        margin-bottom:15%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .navbar-brand {
+        font-size: 0.6rem;
+    }
+    #leftNav {
+        margin-top:20%;
+        height: 50%;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .navbar-brand {
+        font-size: 0.7rem;
+    }
+}

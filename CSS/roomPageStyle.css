@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+}
+/*Html & Body & Main Style*/
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    font-family: Montserrat, cursive, sans-serif;
+}
+main {
+  min-height: calc(100% - 70px);
+}
+ul {
+    list-style-type: none;
+    margin: 0 !important;
+    padding: 0;
+    overflow: hidden;
+}
+li p{
+    color: rgb(40, 40, 40);
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    margin:0;
+}
+/*Container Div*/
+.container {
+    padding: 1% 0 0 0;
+    margin: 0 auto;
+}
+#mainBody { 
+    margin-top:5%;
+}
+/*Header Information*/
+#Headerinformation {
+    background-color: rgb(240,100,0);
+    height:50px;
+    border-radius: 5px;
+}
+.leftHeaderText {
+    float:left;
+    color: white;
+    font-weight: bold;
+    text-align:center;
+    padding: 10px;
+    font-size:1.2rem;
+}
+.rightHeaderText {
+    float:right;
+    color: white;
+    font-weight: bold;
+    text-align:center;
+    padding: 10px;
+    font-size:1.2rem;
+}
+/*Information Tag*/
+#info{
+    margin-bottom: 10px;
+}
+.information {
+    background-color: rgb(240,100,0);
+    border-radius: 5px;
+}
+.infoi{
+    float: left;
+    width:20%;
+    text-align:center;
+}
+.infoText {
+    color: white;
+    font-weight: bold;
+    border-right: 1px dashed white;
+}
+img {
+    padding:5px 0 15px 0;
+    width: 100%;
+}
+/*Room Descritpion*/
+#RoomDesc {
+    padding: 0 15px 15px 15px;
+    font-weight: normal;
+    margin:10px 0 0 15px;
+    border-left: 2px solid rgb(240,100,0);
+}
+#bookButton {
+    margin-top: 5px;
+    float:right;
+    background-color: rgb(240,100,0);
+}
+/*Map*/
+.myMap {
+    height: 400px;
+    width: 100%;
+    padding: 0 30px 0 0;
+    margin-top: 5px;
+}
+/*Horizontal line between Map and Review Tag*/
+#ReviewHr {
+    margin-top:8rem;
+    border: 0;
+    border-bottom: 1px dashed rgb(31, 30, 30);
+}
+/*Review Results*/
+#description {
+    margin-top:5px;
+    border-left: 2px solid rgb(240,100,0);
+    padding:1%;
+}
+/*Add reviews*/
+#AddReview {
+    margin-left: 15px;
+    margin-top: 50px;
+    font-weight: normal;
+    border-left: 2px solid rgb(240,100,0);
+}
+textarea{
+    resize: none;
+    margin-top: 10px;
+    width: 100%;
+    padding: 1%;
+}
+#reviewButton {
+    width: 20%;
+    margin-left: 40%;
+    margin-top:10px;
+    background-color: rgb(240,100,0);
+}
+/* STARS */
+fieldset, label { 
+    margin: 0; 
+    padding: 0; 
+}  
+/****** Style Star Rating Widget *****/
+.rating { 
+border: none;
+float: left;
+}
+.rating > input { 
+    display: none;
+} 
+.rating > label:before { 
+margin: 5px;
+font-size: 1.25em;
+font-family: FontAwesome;
+display: inline-block;
+content: "\f005";
+}
+.rating > label { 
+color: #ddd; 
+float: right; 
+}
+/***** CSS Magic to Highlight Stars on Hover *****/
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { 
+    color: #FFD700;  
+}
+/* hover previous stars in list */
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85; } 
+/* HEART */
+#Headerinformation input {
+    display: none;
+}
+#Headerinformation label:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f004";
+}
+#Headerinformation input:checked~label,
+/* show gold star when clicked */
+
+#Headerinformation:not(:checked) label:hover,
+/* hover current star */
+
+#Headerinformation:not(:checked) label:hover~label {
+    color: red;
+}
+/*Footer*/
+footer {
+    margin-top: 10px;
+    padding: 21px;
+    text-align: center;
+    color:whitesmoke;
+    font-size: 18px;
+    background-color: rgb(63, 68, 63);
+    height: 60px;
+    width: 100%;
+}
+/*Custom ScrollBar*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+/*Media Queries*/
+@media only screen and (max-width: 940px) {
+    #mainBody {
+        margin-top:10%;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .infoText{
+        font-size: 0.7rem;
+    }   
+}
+@media only screen and (max-width: 768px){
+    #Headerinformation{
+        height:5%;
+    }
+    p.rightHeaderText, p.leftHeaderText{
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 518px) {
+    .navbar-brand{
+        font-size:0.8rem;
+    }
+    #mainBody {
+        margin-top:20%;
+    }
+}
+@media only screen and (max-width: 492px) {
+    p.rightHeaderText, p.leftHeaderText{
+            font-size: 0.7rem;
+    }
+}
+@media only screen and (max-width: 436px) {
+    p.rightHeaderText, p.leftHeaderText{
+            font-size: 0.6rem;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .navbar-brand {
+        font-size: 0.7rem;
+    }
+    p.rightHeaderText, p.leftHeaderText{
+            font-size: 0.5rem;
+    }
+    #reviewButton{
+        width: 40%;
+        margin: 10px auto;
+    }
+    #description{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 342px) {
+    .navbar-brand {
+        font-size: 0.6rem;
+    }
+}
+@media only screen and (max-width: 320px) {
+    p.rightHeaderText, p.leftHeaderText{
+        font-size: 0.4rem;
+    }
+    .infoText{
+        font-size: 0.4rem;
+    }
+    #reviewButton{
+        width: 40%;
+    }
+    #description{
+        text-align: center;
+    }
+}

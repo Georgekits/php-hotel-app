@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+}
+/*Html & Body & Main Styling*/
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    font-family: Montserrat, cursive, sans-serif;
+}
+main {
+  min-height: calc(100% - 70px);
+}
+/*Container Div*/
+.container {
+    margin: 0 auto;
+    padding: 1% 0 0 0;
+}
+#resultBody {
+    margin-top:8%;
+}
+#filterNav{
+    margin-top:8%;
+    background-color: papayawhip;
+    height: 55%;
+    border-radius: 30px;
+}
+/*Hover on result Item*/
+.resultItem:hover
+{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari 3-8 */
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;  
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+/*Filter Heading*/
+h5 {
+    color:rgb(240,100,0);
+}
+/*Container Select*/
+.container select {
+    width: 100%;
+    padding: 1%;
+    height: 40px;
+    margin-top:10px;
+    border-style:none;
+    border-radius:4px;
+}
+/*5 Html input styling*/
+input {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border-style:none;
+    border-radius:4px;
+}
+#min {
+    background-color: lightgrey;
+    border-radius: 5px;
+    height: 30px;
+    border:0;
+    font-size:0.9em;
+}
+#max{
+    background-color: lightgrey;
+    border-radius: 5px;
+    height: 30px;
+    margin-bottom:20px;
+    border:0;
+    font-size:0.9em;
+}
+input[type=button] {
+    width: 20%;
+    margin-left: 40%;
+}
+.bookingHeading h5 {
+    background-color: rgb(240,100,0);
+    color:white;
+    border-radius: 3px;
+    padding: 1%;
+}
+/*Hotel Results*/
+.results {
+    margin-top:20px;
+}
+/*Hotel Image*/
+img {
+    width: 100%;
+} 
+/*Hotel Information*/
+.hl {
+    background-color:rgb(240,100,0);
+    width:2px;
+    height:100%;
+    margin: 0 auto;
+}
+h6 {
+    font-weight: bold;
+}
+/*Go to room button*/
+.btn {
+    float: right;
+    background-color: rgb(240,100,0);
+    color: white;
+    margin: 5% 0 2% 0;
+}
+/*Price Tag*/
+.price {
+    background-color: gray;
+    color: white;
+    padding: 8px 3px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 16px;
+}
+.price p {
+    margin: 0 auto;
+}
+/*Left orange border*/
+#itemBody{
+    border-left: 2px solid rgb(240,100,0);
+    height: 15%;
+}
+/*Information tag*/
+.info {
+    background-color:rgb(235,235,235);
+    padding:8px 2px;
+    border-radius: 3px;
+    height:40px;
+}
+.info p {
+    font-size: 14px;
+}
+/*Footer*/
+footer {
+    margin-top: 10px;
+    padding: 21px;
+    text-align: center;
+    color:whitesmoke;
+    font-size: 18px;
+    background-color: rgb(63, 68, 63);
+    height: 60px;
+    width: 100%;
+}
+/*Custom ScrollBar*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+/*Media Queries*/
+@media only screen and (max-width: 990px) {
+    #filterNav {
+        height: 70%;
+        margin-top: 10%;
+        padding:5%;
+    }
+}
+@media only screen and (max-width: 670px) {
+    .info {
+        background-color:rgb(235,235,235);
+        padding:8px 2px;
+        border-radius: 3px;
+        height:64px;
+    }
+    #typeOfroom {
+        float:right;
+    }
+}
+@media only screen and (max-width: 518px) {
+    .navbar-brand{
+        font-size:0.8rem;
+    }
+}
+@media only screen and (max-width: 376px) {
+    #filterNav {
+        margin-top:20%;
+    }
+    .navbar-brand{
+        font-size:0.7rem;
+    }
+    #itemBody {
+        margin-bottom: 15%;
+    }
+}
+@media only screen and (max-width: 766px) {
+    #filterNav {
+        margin-top:15%;
+    }
+}

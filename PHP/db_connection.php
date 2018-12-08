@@ -2,12 +2,21 @@
 <body>
 
 <?php
-    //HUA DATABASE
-    $conn = mysqli_connect("83.212.105.20", "it21520", "m%92m07h","it21520") or die (mysql_error());
-    //Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+    //Database server IP
+	$host = '';
+	//Database name
+	$db_name = '';
+	//Database username
+	$username = '';
+	//Database password
+	$password = '!';
+	
+	//Establishes the connection
+	$conn = mysqli_init();
+	mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306);
+	if (mysqli_connect_errno($conn)) {
+		die('Failed to connect to MySQL: '.mysqli_connect_error());
+	}
 ?>
 </body>
 </html>

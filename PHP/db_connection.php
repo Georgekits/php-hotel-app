@@ -2,14 +2,14 @@
 <body>
 
 <?php
-    //Database server IP
-	$host = 'portfoliogeorge.mysql.database.azure.com';
+	//Database server IP
+	$host = '';
 	//Database name
-	$db_name = 'hotels-com';
+	$db_name = '';
 	//Database username
-	$username = 'george@portfoliogeorge';
+	$username = '';
 	//Database password
-	$password = 'portfolioProject!';
+	$password = '!';
 	
 	//Establishes the connection
 	$conn = mysqli_init();
